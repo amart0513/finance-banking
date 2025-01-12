@@ -22,6 +22,8 @@ const Home = () => {
             totalCurrentBalance={1250.35}
           />
         </header>
+        RECENT TRANSACTIONS (1:16:34 **STOPPED HERE with vid: Build and Deploy a Banking App with Finance Management Dashboard Using Next.js 14
+        youtuber: JavaScript Mastery)
       </div>
     </section>
   )
