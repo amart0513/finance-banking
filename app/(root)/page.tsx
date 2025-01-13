@@ -1,9 +1,10 @@
 import HeaderBox from '@/components/ui/HeaderBox'
+import RightSidebar from '@/components/ui/RightSidebar'
 import TotalBalanceBox from '@/components/ui/TotalBalanceBox'
 
 const Home = () => {
 
-  const loggedIn = { firstName: "Angie"}
+  const loggedIn = { firstName: "Angie", lastName: "Martinez", email: "example@gmail.com"}
 
 
   return (
@@ -22,9 +23,10 @@ const Home = () => {
             totalCurrentBalance={1250.35}
           />
         </header>
-        RECENT TRANSACTIONS (1:16:34 **STOPPED HERE with vid: Build and Deploy a Banking App with Finance Management Dashboard Using Next.js 14
-        youtuber: JavaScript Mastery)
+        RECENT TRANSACTIONS
       </div>
+      <RightSidebar user={loggedIn} transactions={[]} 
+      banks={[{currentBalance: 123.50}, {currentBalance: 500.50}]}/>
     </section>
   )
 }
